@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bolim é uma confeitaria artesanal: bolos, tortas e doces feitos em pequenas produções, com ingredientes de verdade.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Confeitaria Bolim</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" aria-label="Bolim, voltar ao início">
+                <img src="src/css/images/logo-bolim-v2.png" alt="Logo da confeitaria Bolim" class="logo">
+            </a>
+            <div class="nav-menu">
+                <ul id="nav-links">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#trend">Queridinhos</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Chegando agora</a>
+                    </li>
+                </ul>
+                <button class="btn btn-mobile" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <a href="#contato" class="btn btn-default">Contatar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Doces feitos com calma, do jeito que deveriam ser.</h1>
+                    <p>
+                        Bolos, tortas e doces artesanais, em pequenas produções e com ingredientes de verdade.
+                        Cada encomenda é preparada à mão, como se fosse para a nossa própria mesa.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contato" class="btn btn-default-solid">Fazer pedido</a>
+                        <a href="#trend" class="btn btn-ghost">Ver queridinhos</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <svg viewBox="0 0 200 200" role="img" aria-label="Ilustração de uma fatia de bolo com cereja">
+                        <circle cx="100" cy="100" r="96" fill="#FBD6E0"/>
+                        <circle cx="100" cy="100" r="88" fill="none" stroke="#FFF0C4" stroke-width="5"/>
+                        <g transform="translate(100 104) scale(1.3) translate(-101 -100)">
+                            <polygon points="120,94 142,78 142,124 120,142" fill="#6B3E2A"/>
+                            <polygon points="120,94 142,78 142,86 120,102" fill="#F7DA94"/>
+                            <rect x="60" y="94" width="60" height="48" fill="#966244"/>
+                            <rect x="60" y="106" width="60" height="6" fill="#E8789B"/>
+                            <rect x="60" y="120" width="60" height="8" fill="#E8789B"/>
+                            <rect x="60" y="138" width="60" height="4" fill="#6B3E2A"/>
+                            <polygon points="60,94 120,94 142,78 82,78" fill="#FFF0C4"/>
+                            <rect x="60" y="94" width="60" height="6" fill="#FFF0C4"/>
+                            <rect x="64" y="94" width="8" height="13" rx="4" fill="#FFF0C4"/>
+                            <rect x="80" y="94" width="8" height="13" rx="4" fill="#FFF0C4"/>
+                            <rect x="96" y="94" width="8" height="13" rx="4" fill="#FFF0C4"/>
+                            <rect x="108" y="94" width="8" height="13" rx="4" fill="#FFF0C4"/>
+                            <line x1="60" y1="94" x2="120" y2="94" stroke="#F7DA94" stroke-width="2"/>
+                            <circle cx="94" cy="74" r="8" fill="#E8789B"/>
+                            <circle cx="91.5" cy="71" r="1.8" fill="#FFD2DE"/>
+                            <line x1="94" y1="67" x2="100" y2="57" stroke="#6B3E2A" stroke-width="2" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUERIDINHOS -->
+        <section id="trend" class="section section-cream">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Os queridinhos da casa</h2>
+                    <p>Os sabores que mais voltam para a mesa de quem já provou.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card card-pink">
+                        <div class="card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                        <h3>Bolo de cenoura com ganache</h3>
+                        <p>Massa macia e úmida, cobertura de chocolate de verdade e uma pitada de pimenta para surpreender.</p>
+                        <a href="#contato" class="card-link">Encomendar</a>
+                    </article>
+
+                    <article class="card card-cream">
+                        <div class="card-icon"><i class="fa-solid fa-cookie-bite"></i></div>
+                        <h3>Brigadeiro de maracujá com flor de sal</h3>
+                        <p>Doce, azedinho e com um toque salgado no final. Feito em pequenas panelas, enrolado à mão.</p>
+                        <a href="#contato" class="card-link">Encomendar</a>
+                    </article>
+
+                    <article class="card card-brown">
+                        <div class="card-icon"><i class="fa-solid fa-lemon"></i></div>
+                        <h3>Torta de limão</h3>
+                        <p>Base crocante, creme na medida e merengue maçaricado. Dessas que não sobram para o dia seguinte.</p>
+                        <a href="#contato" class="card-link">Encomendar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section id="sobre" class="section section-pink">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2>Ingredientes bons, tempo certo e atenção a cada detalhe</h2>
+                    <p>
+                        A Bolim começou na cozinha de casa, com poucas receitas e muita vontade de acertar.
+                        De lá pra cá, o princípio continua o mesmo: fazer com calma o que merece ser bem feito.
+                    </p>
+                    <p>
+                        Acreditamos que um bom doce não precisa de exagero. Precisa de equilíbrio: massa macia,
+                        recheio na medida, açúcar sem pesar. Por isso trabalhamos com pequenas produções,
+                        receitas autorais e ingredientes selecionados.
+                    </p>
+                    <p class="about-invite">Experimente e sinta a diferença.</p>
+                </div>
+
+                <ul class="values">
+                    <li>
+                        <span class="value-icon"><i class="fa-solid fa-wheat-awn"></i></span>
+                        <div>
+                            <h3>Ingredientes de verdade</h3>
+                            <p>Manteiga, chocolate e frutas de qualidade, sem substitutos e sem atalhos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="value-icon"><i class="fa-solid fa-star"></i></span>
+                        <div>
+                            <h3>Cuidado no acabamento</h3>
+                            <p>Visual delicado e sabor marcante, porque um não deveria existir sem o outro.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="value-icon"><i class="fa-solid fa-gift"></i></span>
+                        <div>
+                            <h3>Para ocasiões que importam</h3>
+                            <p>Aniversários, presentes ou aquele café de domingo: a dedicação é a mesma.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CHEGANDO AGORA -->
+        <section id="produtos" class="section section-white">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Chegando agora</h2>
+                    <p>As novidades que saíram do forno ou estão quase lá.</p>
+                </div>
+
+                <ul class="news">
+                    <li class="news-item">
+                        <span class="news-icon"><i class="fa-solid fa-leaf"></i></span>
+                        <div class="news-body">
+                            <h3>Bolo de pistache com framboesa</h3>
+                            <p>Massa aveludada de pistache e recheio de frutas vermelhas.</p>
+                        </div>
+                        <span class="tag tag-new">Novo</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-icon"><i class="fa-solid fa-cake-candles"></i></span>
+                        <div class="news-body">
+                            <h3>Mini bolos individuais</h3>
+                            <p>Porções para uma pessoa, ótimas para presentear.</p>
+                        </div>
+                        <span class="tag tag-new">Novo</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-icon"><i class="fa-solid fa-gift"></i></span>
+                        <div class="news-body">
+                            <h3>Caixa presente Bolim</h3>
+                            <p>Seleção de doces em embalagem pronta para entregar.</p>
+                        </div>
+                        <span class="tag tag-soon">Em breve</span>
+                    </li>
+                    <li class="news-item">
+                        <span class="news-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                        <div class="news-body">
+                            <h3>Cesta de café de domingo</h3>
+                            <p>Bolo, pãezinhos e geleias para uma mesa farta.</p>
+                        </div>
+                        <span class="tag tag-soon">Em breve</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section section-brown">
+            <div class="container contact">
+                <h2>Vamos adoçar o seu dia?</h2>
+                <p>Conte para a gente a data, o tamanho e o sabor que você imagina. Respondemos o mais rápido possível.</p>
+                <div class="contact-actions">
+                   
+                    <a href="https://wa.me/5500000000000" class="btn btn-light" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                    </a>
+                    
+                    <a href="https://instagram.com/" class="btn btn-outline" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i> Ver no Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Confeitaria Bolim. Todos os direitos reservados.</p>
+            <a href="#home" class="back-top">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
